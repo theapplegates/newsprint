@@ -1,0 +1,20 @@
+/* Article page specific overrides handled in components/article.css and components/columns.css */
+
+@media (max-width: 768px) {
+  .article-page {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .article-page__header {
+    margin-bottom: var(--space-lg);
+  }
+
+  .article-page__hero {
+    margin-bottom: var(--space-lg);
+  }
+
+  .article-page__meta {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+}
