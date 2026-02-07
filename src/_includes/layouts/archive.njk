@@ -1,0 +1,50 @@
+---
+layout: layouts/base.njk
+---
+<div class="archive-page">
+  <header class="archive-page__header">
+    <h1 class="archive-page__title">{{ title }}</h1>
+    {% if subtitle %}
+    <p class="archive-page__subtitle">{{ subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <div class="archive-page__body">
+    {{ content | safe }}
+
+    {% if categoryFilter %}
+      {% set articles = collections[categoryFilter] %}
+    {% else %}
+      {% set articles = collections.articles %}
+    {% endif %}
+
+    {% if articles.length > 0 %}
+    <div class="archive-list">
+      {% set currentYear = "" %}
+      {% for article in articles %}
+        {% set articleYear = article.date.getFullYear() | string %}
+        {% if articleYear != currentYear %}
+          {% set currentYear = articleYear %}
+          <h2 class="archive-list__year">{{ currentYear }}</h2>
+        {% endif %}
+        <article class="archive-list__item">
+          <time class="archive-list__date" datetime="{{ article.date | dateISO }}">{{ article.date | dateShort }}</time>
+          <div class="archive-list__content">
+            <h3 class="archive-list__title">
+              <a href="{{ article.url }}">{{ article.data.title }}</a>
+            </h3>
+            {% if article.data.category %}
+            <span class="archive-list__category">{{ article.data.category }}</span>
+            {% endif %}
+            {% if article.data.excerpt %}
+            <p class="archive-list__excerpt">{{ article.data.excerpt }}</p>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p>No articles found.</p>
+    {% endif %}
+  </div>
+</div>

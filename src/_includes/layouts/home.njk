@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+---
+<div class="homepage">
+  {% set featuredArticles = collections.featured %}
+  {% if featuredArticles.length > 0 %}
+  <section class="featured" aria-label="Featured article">
+    {% set lead = featuredArticles[0] %}
+    <article class="featured__article">
+      {% if lead.data.image %}
+      <a href="{{ lead.url }}" class="featured__image-link">
+        <img src="{{ lead.data.image }}" alt="{{ lead.data.imageCaption or lead.data.title }}" class="featured__image" loading="eager">
+      </a>
+      {% endif %}
+      <div class="featured__content">
+        {% if lead.data.category %}
+        <span class="featured__category">{{ lead.data.category }}</span>
+        {% endif %}
+        <h2 class="featured__title">
+          <a href="{{ lead.url }}">{{ lead.data.title }}</a>
+        </h2>
+        {% if lead.data.subtitle %}
+        <p class="featured__subtitle">{{ lead.data.subtitle }}</p>
+        {% endif %}
+        <p class="featured__excerpt">{{ lead.data.excerpt or (lead.templateContent | excerpt) }}</p>
+        <div class="featured__meta">
+          {% if lead.data.author %}<span class="featured__author">By {{ lead.data.author }}</span>{% endif %}
+          <time class="featured__date" datetime="{{ lead.date | dateISO }}">{{ lead.date | dateDisplay }}</time>
+        </div>
+        <a href="{{ lead.url }}" class="featured__read-more">Continue reading &rarr;</a>
+      </div>
+    </article>
+  </section>
+  {% endif %}
+
+  <div class="homepage__body">
+    <section class="article-grid" aria-label="Latest articles">
+      <div class="article-grid__rule">
+        <span class="article-grid__label">Latest</span>
+      </div>
+      <div class="article-grid__columns">
+        {% for article in collections.articles | limit(9) %}
+        {% if not (featuredArticles.length > 0 and article.url == featuredArticles[0].url) %}
+        <div class="article-grid__item{% if loop.index0 < 2 %} article-grid__item--large{% endif %}">
+          {% set title = article.data.title %}
+          {% set subtitle = article.data.subtitle %}
+          {% set date = article.date %}
+          {% set author = article.data.author %}
+          {% set category = article.data.category %}
+          {% set image = article.data.image %}
+          {% set imageCaption = article.data.imageCaption %}
+          {% set excerpt = article.data.excerpt %}
+          {% set url = article.url %}
+          {% set content = article.templateContent %}
+          {% include "components/article-card.njk" %}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    {% include "components/sidebar.njk" %}
+  </div>
+</div>

@@ -1,0 +1,77 @@
+---
+layout: layouts/base.njk
+---
+<article class="article-page" itemscope itemtype="https://schema.org/Article">
+  <header class="article-page__header">
+    {% if category %}
+    <a href="/category/{{ category | lower }}/" class="article-page__category">{{ category }}</a>
+    {% endif %}
+    <h1 class="article-page__title" itemprop="headline">{{ title }}</h1>
+    {% if subtitle %}
+    <p class="article-page__subtitle" itemprop="alternativeHeadline">{{ subtitle }}</p>
+    {% endif %}
+    <div class="article-page__meta">
+      {% if author %}
+      <span class="article-page__author" itemprop="author">By <strong>{{ author }}</strong></span>
+      {% endif %}
+      <time class="article-page__date" datetime="{{ date | dateISO }}" itemprop="datePublished">{{ date | dateDisplay }}</time>
+      <span class="article-page__readtime">{{ content | readTime }}</span>
+    </div>
+  </header>
+
+  {% if image %}
+  <figure class="article-page__hero">
+    <img src="{{ image }}" alt="{{ imageCaption or title }}" class="article-page__hero-image" itemprop="image" loading="eager">
+    {% if imageCaption %}
+    <figcaption class="article-page__hero-caption">{{ imageCaption }}</figcaption>
+    {% endif %}
+  </figure>
+  {% endif %}
+
+  <div class="article-page__body" itemprop="articleBody">
+    {{ content | safe }}
+  </div>
+
+  <footer class="article-page__footer">
+    <div class="article-page__rule"></div>
+
+    {% if author %}
+    <div class="article-page__author-bio">
+      <p class="article-page__author-bio-name">{{ author }}</p>
+      <p class="article-page__author-bio-text">{{ site.title }} contributor</p>
+    </div>
+    {% endif %}
+
+    <div class="article-page__share">
+      <span class="article-page__share-label">Share this article:</span>
+      <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ title }}" target="_blank" rel="noopener" aria-label="Share on Twitter">Twitter</a>
+      <a href="mailto:?subject={{ title }}&body={{ site.url }}{{ page.url }}" aria-label="Share via email">Email</a>
+    </div>
+
+    {% set related = collections.articles | limit(3) %}
+    {% if related.length > 0 %}
+    <div class="article-page__related">
+      <h3 class="article-page__related-heading">Related Articles</h3>
+      <ul class="article-page__related-list">
+        {% for item in related %}
+        {% if item.url != page.url %}
+        <li>
+          <a href="{{ item.url }}">{{ item.data.title }}</a>
+          <time datetime="{{ item.date | dateISO }}">{{ item.date | dateShort }}</time>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <div class="article-page__newsletter">
+      <h3 class="article-page__newsletter-heading">Enjoy this article?</h3>
+      <p>Subscribe to get every edition of {{ site.title }} delivered to your inbox.</p>
+      <form class="newsletter-signup__form" action="#" method="post">
+        <input type="email" class="newsletter-signup__input" placeholder="your@email.com" aria-label="Email address" required>
+        <button type="submit" class="newsletter-signup__button">Subscribe</button>
+      </form>
+    </div>
+  </footer>
+</article>
