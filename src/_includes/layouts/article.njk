@@ -44,7 +44,9 @@ layout: layouts/base.njk
 
     <div class="article-page__share">
       <span class="article-page__share-label">Share this article:</span>
-      <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ title }}" target="_blank" rel="noopener" aria-label="Share on Twitter">Twitter</a>
+      <a href="https://mastodon.social/?status={{ title }} {{ site.url }}{{ page.url }}" target="_blank" rel="noopener" aria-label="Share on Mastodon">Mastodon</a>
+      <a href="https://bsky.app/intent/compose?text={{ title }} {{ site.url }}{{ page.url }}" target="_blank" rel="noopener" aria-label="Share on Bluesky">Bluesky</a>
+      <a href="https://www.threads.net/intent/post?text={{ title }} {{ site.url }}{{ page.url }}" target="_blank" rel="noopener" aria-label="Share on Threads">Threads</a>
       <a href="mailto:?subject={{ title }}&body={{ site.url }}{{ page.url }}" aria-label="Share via email">Email</a>
     </div>
 
