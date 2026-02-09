@@ -10,6 +10,7 @@
     "threads": "https://threads.com/brennankbrown",
     "bluesky": "https://bsky.app/profile/brennanbrown.ca"
   },
+  "noindex": true,
   "masthead": {
     "tagline": "All the News That's Fit to Ship!",
     "established": "2026"

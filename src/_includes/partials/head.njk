@@ -3,6 +3,7 @@
 <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ excerpt or site.description }}">
 <meta name="author" content="{{ author or site.author }}">
+{% if site.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 
 <!-- Favicons -->
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">

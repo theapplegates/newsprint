@@ -190,6 +190,22 @@ Footer includes:
 - Theme attribution with links
 - 11ty attribution
 
+## Demo Content
+
+**Important Note**: The demo articles are real articles written by Brennan Brown and published at [https://brennan.day](https://brennan.day). These are included to demonstrate the theme's typography, layout, and multi-author capabilities. When using this theme for your own publication, you should replace these articles with your own content.
+
+## SEO Configuration
+
+The theme includes SEO protection for demo sites. In `src/_data/site.json`, set `noindex: true` to prevent search engines from indexing your demo site:
+
+```json
+{
+  "noindex": true
+}
+```
+
+**Important**: Remember to set `"noindex": false` or remove this field when launching your actual publication to allow proper SEO indexing.
+
 ## License
 
 MIT License - see LICENSE file for details.
