@@ -49,6 +49,10 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("dateYear", function(date) {
+    // Handle "now" string or undefined to get current year
+    if (!date || date === "now") {
+      return new Date().getFullYear();
+    }
     return new Date(date).getFullYear();
   });
 
