@@ -3,16 +3,16 @@
   "description": "Newsprint is a modern 11ty theme meant for publications embracing classic newspaper typography, multi-column layouts, and the timeless design of print journalism in digital form. Our design draws inspiration from the golden age of newspaper publishing, featuring Newsreader variable typeface with optical sizing, justified text with proper hyphenation, drop caps, pull quotes, and ruled lines echoing the craftsmanship of traditional broadsheet journalism.",
   "url": "https://newspaper.paulapplegate.com",
   "author": "Editorial Team",
-  "email": "editor@brennanbrown.ca",
-  "donationUrl": "https://ko-fi.com/brennan",
+  "email": "me@paulapplegate.com",
+  "donationUrl": "https://ko-fi.com/",
   "social": {
-    "mastodon": "https://social.lol/@brennan",
-    "threads": "https://threads.com/brennankbrown",
-    "bluesky": "https://bsky.app/profile/brennanbrown.ca"
+    "mastodon": "https://social.lol/",
+    "threads": "https://threads.coem/",
+    "bluesky": "https://bsky.app/@mrapplegate.bsky.social/"
   },
   "noindex": true,
   "masthead": {
-    "tagline": "All the News That's Fit to Ship!",
+    "tagline": "No AI. Well, maybe some, but I will mention it upfront!",
     "established": "2026"
   },
   "copyright": "© 2026 Code is MIT and content is CC BY-SA"
