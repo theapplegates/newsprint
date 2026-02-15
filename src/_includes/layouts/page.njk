@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+---
+<div class="archive-page">
+  <header class="archive-page__header">
+    <h1 class="archive-page__title">{{ title }}</h1>
+    {% if subtitle %}
+    <p class="archive-page__subtitle">The story behind {{ site.title }}</p>
+    {% endif %}
+  </header>
+
+  <div class="archive-page__body">
+    {{ content | safe }}
+  </div>
+</div>

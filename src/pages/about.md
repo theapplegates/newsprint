@@ -1,5 +1,5 @@
 ---
-layout: layouts/archive.njk
+layout: layouts/page.njk
 title: "About"
 subtitle: "The story behind {{ site.title }}"
 permalink: /about/
