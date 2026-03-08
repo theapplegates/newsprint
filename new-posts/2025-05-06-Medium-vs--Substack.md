@@ -190,53 +190,6 @@
 <p>Platform decisions ultimately serve larger creative goals. As I navigate this transition, I’m keeping sight of what matters most: creating meaningful work that serves both artistic and community purposes. The shift to Substack isn’t about chasing trends but about aligning tools with values—finding the right container for the work I’m called to do.</p>
 <p>If you’ve resonated with my journey so far, I invite you to join me in this next chapter. <a href="https://brennan.substack.com">Subscribe to the newsletter</a>, explore the books, engage with the conversations. This isn’t my story alone but part of larger narratives about how we make meaning together through language.</p>
 <p><a href="https://medium.com/@brennanbrown/medium-vs-substack-7e5f0f5e1339">Originally posted here.</a></p>
-<picture>
-  <source 
-    type="image/jxl" 
-    srcset="https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_1194/v1772927247/jn8gzsslevclgvm5nanx.jxl 1194w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_1002/v1772927247/jn8gzsslevclgvm5nanx.jxl 1002w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_920/v1772927247/jn8gzsslevclgvm5nanx.jxl 920w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_826/v1772927247/jn8gzsslevclgvm5nanx.jxl 826w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_709/v1772927247/jn8gzsslevclgvm5nanx.jxl 709w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_595/v1772927247/jn8gzsslevclgvm5nanx.jxl 595w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_385/v1772927247/jn8gzsslevclgvm5nanx.jxl 385w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_277/v1772927247/jn8gzsslevclgvm5nanx.jxl 277w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jxl/c_scale,w_50/v1772927247/jn8gzsslevclgvm5nanx.jxl 50w" 
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px" 
-  />
-  <source 
-    type="image/avif" 
-    srcset="https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_1194/v1772927247/jn8gzsslevclgvm5nanx.avif 1194w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_1002/v1772927247/jn8gzsslevclgvm5nanx.avif 1002w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_920/v1772927247/jn8gzsslevclgvm5nanx.avif 920w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_826/v1772927247/jn8gzsslevclgvm5nanx.avif 826w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_709/v1772927247/jn8gzsslevclgvm5nanx.avif 709w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_595/v1772927247/jn8gzsslevclgvm5nanx.avif 595w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_385/v1772927247/jn8gzsslevclgvm5nanx.avif 385w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_277/v1772927247/jn8gzsslevclgvm5nanx.avif 277w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_avif/c_scale,w_50/v1772927247/jn8gzsslevclgvm5nanx.avif 50w" 
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px" 
-  />
-  <img 
-    src="https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_800/v1772927247/jn8gzsslevclgvm5nanx.jpg"
-    srcset="https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_1194/v1772927247/jn8gzsslevclgvm5nanx.jpg 1194w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_1002/v1772927247/jn8gzsslevclgvm5nanx.jpg 1002w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_920/v1772927247/jn8gzsslevclgvm5nanx.jpg 920w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_826/v1772927247/jn8gzsslevclgvm5nanx.jpg 826w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_709/v1772927247/jn8gzsslevclgvm5nanx.jpg 709w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_595/v1772927247/jn8gzsslevclgvm5nanx.jpg 595w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_385/v1772927247/jn8gzsslevclgvm5nanx.jpg 385w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_277/v1772927247/jn8gzsslevclgvm5nanx.jpg 277w,
-      https://res.cloudinary.com/paulapplegate-com/image/upload/q_auto,f_jpg/c_scale,w_50/v1772927247/jn8gzsslevclgvm5nanx.jpg 50w"
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-    alt="A responsive image uploaded to Cloudinary"
-    loading="lazy"
-    width="1194"
-    height="1600"
-    class="w-full h-auto rounded-lg shadow-lg"
-  />
-</picture>
-
   </div>
 
   <footer class="article-page__footer">
